@@ -22,11 +22,11 @@ public class Kiralynok {
     private void megoldasok() {
        feladat4();
        feladat6();
+       feladat9();
     }
 
     private void feladat4() {
         System.out.println("4. feldat: üres tábla megjelenítése:");
-        Tabla tabla = new Tabla('#');
         tabla.megjelenit();
         
     }
@@ -35,6 +35,12 @@ public class Kiralynok {
         System.out.println("6. feladat: feltöltött tábla:");
         tabla.elhelyez(8);
         tabla.megjelenit();
+    }
+
+    private void feladat9() {
+        System.out.println("9. feladat: üress sorok és oszlopok száma:");
+        System.out.println("Sorok: " + tabla.uresSorokSzama());
+        System.out.println("Oszlop: " + tabla.uresOszlopokSzama());
     }
     
 }
